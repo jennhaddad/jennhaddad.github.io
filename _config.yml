@@ -1,0 +1,21 @@
+# Site settings
+title:       Jennifer Haddad
+email:       hello@jennhaddad.com
+description: > # this means to ignore newlines until "baseurl:"
+  Personal portfolio site of Jennifer Haddad | Web Designer
+baseurl:     "" # the subpath of your site, e.g. /blog/
+url:         "http://jennhaddad.com" # the base hostname & protocol for your site
+logo:        "/images/logo.png"
+fb_image:    "/images/fb-og-image.jpg"
+favicon:     "/favicon.ico"
+
+# Social Media
+twitter_username:  Jennhaddad
+github_username:   jennhaddad
+behance_username:  jennhaddad
+linkedin_username: jennhaddad
+
+# Build settings
+markdown: kramdown
+
+exclude: [Vagrantfile, README.md, LICENSE, CNAME, .DS_Store, Gemfile, Gemfile.lock, .gitignore]

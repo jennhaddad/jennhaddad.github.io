@@ -1,0 +1,39 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Our variables
+$font-family-base: Arial, sans-serif;
+$font-size-base:   16px;
+$font-size-small:  $font-size-base * 0.875;
+$font-size-h1:     2.8em;
+$font-size-h2:     1.8em;
+$font-size-h3:     1.4em;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #000;
+$background-color: #FFF;
+$body-bg:          $background-color;
+
+$brand-color:      red;
+$secondary-color:  black;
+
+@mixin border-radius($radius) {
+     border-top-right-radius: $radius;
+      border-top-left-radius: $radius;
+  border-bottom-right-radius: $radius;
+   border-bottom-left-radius: $radius;
+}
+
+// import bootstrap
+@import "bootstrap";
+@import "full_page";
+
+// import custom styles
+@import "fonts";
+@import "layout";
+@import "sections";
+@import "404";
