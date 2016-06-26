@@ -9,10 +9,10 @@
 #four-o-four {
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right bottom, $secondary-color 50%, $brand-color 50%);
+  background: linear-gradient(to right bottom, $brand-secondary 50%, $brand-primary 50%);
 
   h1 {
-    background-color: $brand-color;
+    background-color: $brand-primary;
     display:          inline-block;
     font-size:        $font-size-h1;
     letter-spacing:   2.7px;
@@ -30,7 +30,7 @@
   }
 
   h2 {
-    background-color: $secondary-color;
+    background-color: $brand-secondary;
     display:          inline-block;
     font-size:        $font-size-h2;
     letter-spacing:   2.7px;
@@ -48,7 +48,7 @@
   }
 
   h3 {
-    background-color: $brand-color;
+    background-color: $brand-primary;
     display:          inline-block;
     font-size:        $font-size-h3;
     letter-spacing:   2.7px;

@@ -1,24 +1,6 @@
 .section {
   background-repeat: no-repeat;
   position:          relative;
-
-  h1 {
-    background-color: $brand-color;
-    display:          inline-block;
-    font-size:        $font-size-h1;
-    letter-spacing:   2.7px;
-    line-height:      1em;
-    margin:           0;
-    padding:          15px 20px;
-
-    @include border-radius(10px);
-
-    @media (max-width: $screen-xs-max) {
-      @include border-radius(5px);
-
-      font-size: $font-size-h1 / 2;
-    }
-  }
 }
 
 #fp-nav ul li a {

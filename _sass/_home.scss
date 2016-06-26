@@ -1,0 +1,21 @@
+.i_heart {
+  h2 {
+    color: $brand-primary;
+    margin: 5px 0;
+
+    a {
+      font-weight: 700;
+
+      &:hover{
+        border-bottom: 4px solid;
+        border-bottom-color: $brand-primary;
+        color:               $brand-primary;
+        text-decoration:     none;
+      }
+    }
+
+    span {
+      color: $brand-secondary;
+    }
+  }
+}

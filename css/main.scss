@@ -4,22 +4,31 @@
 @charset "utf-8";
 
 // Our variables
-$font-family-base: Arial, sans-serif;
-$font-size-base:   16px;
-$font-size-small:  $font-size-base * 0.875;
-$font-size-h1:     2.8em;
-$font-size-h2:     1.8em;
-$font-size-h3:     1.4em;
-$base-line-height: 1.5;
+$font-family-base:     'Work Sans', Arial, sans-serif;
+$font-size-base:       18px;
+$font-size-small:      14px;
+$caption-font-size:    16px;
+$font-size-h1:         floor($font-size-base * 2);
+$font-size-h2:         floor($font-size-base * 1.4);
+$font-size-h3:         floor($font-size-base * 1.2);
+$line-height-base:     1.5;
+$line-height-computed: floor($font-size-base * $line-height-base);
+$headings-line-height: 1.6;
 
 $spacing-unit:     30px;
 
-$text-color:       #000;
+$brand-primary:    #a60e13;
+$brand-secondary:  #df1b21;
+$gray-base:        #272727;
+$gray-lighter:     lighten($gray-base, 40%);
+$black:            #000;
+
+$text-color:       $gray-base;
 $background-color: #FFF;
 $body-bg:          $background-color;
 
-$brand-color:      red;
-$secondary-color:  black;
+$navbar-default-bg:     transparent;
+$navbar-default-border: none;
 
 @mixin border-radius($radius) {
      border-top-right-radius: $radius;
@@ -36,4 +45,5 @@ $secondary-color:  black;
 @import "fonts";
 @import "layout";
 @import "sections";
+@import "home";
 @import "404";

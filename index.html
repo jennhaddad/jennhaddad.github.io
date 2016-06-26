@@ -3,23 +3,45 @@ id:         index
 layout:     default
 ---
 <section id='full-page'>
-  <section id="home" class="section">
-    <h1>Home</h1>
+  <section id="home-section" class="section" data-anchor="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9 index_block">
+          <h1>
+            Hello there! I’m Jennifer, a <span class="background-highlight">digital designer</span> from Beirut living in Austin.
+          </h1>
+          <ul class="i_heart">
+            <li><h2>I <span><3</span> <a href="#work">creating</a> a user friendly experience,</h2>
+            </li>
+            <li><h2>I <span><3</span> <a href="#experience">learning</a> new technologies,</h2>
+            </li>
+            <li><h2>I <span><3</span> <a href="#kittens">giraffes</a></span>, <a href="#kittens">kittens</a> and </span> <a href="#kittens">fluffy animals</a> a user friendly experience,</h2>
+            </li>
+            <li><h2>I <span><3</span> <a href="#travel">traveling</a> the world.</h2>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="lower_page_link">
+        <a href="#work">Scroll Down <i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+      </div>
+    </div>
   </section>
 
-  <section id="work" class="section">
+  <section id="work-section" class="section" data-anchor="work">
     <h1>Work</h1>
   </section>
 
-  <section id="experience" class="section">
+  <section id="experience-section" class="section" data-anchor="experience">
     <h1>Experience</h1>
   </section>
 
-  <section id="kittens" class="section">
+  <section id="kittens-section" class="section" data-anchor="kittens">
     <h1>Kittens</h1>
   </section>
 
-  <section id="travel" class="section">
+  <section id="travel-section" class="section" data-anchor="travel">
     <h1>Travel</h1>
     {% include footer.html %}
   </section>
