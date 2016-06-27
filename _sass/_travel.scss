@@ -11,4 +11,25 @@
       left:   56px;
     }
   }
+
+  .next-section-link {
+    .section-cta {
+      height: 50px;
+
+      .credits {
+        text-transform: uppercase;
+        color:          $brand-primary;
+        font-size:      14px;
+
+        a {
+          font-size: 14px;
+          color: $brand-primary;
+
+          &:hover {
+            border-bottom: 3px solid $brand-primary;
+          }
+        }
+      }
+    }
+  }
 }
