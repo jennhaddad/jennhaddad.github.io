@@ -10,10 +10,11 @@ fb_image:    "/images/fb-og-image.jpg"
 favicon:     "/favicon.ico"
 
 # Social Media
-twitter_username:  Jennhaddad
-github_username:   jennhaddad
-behance_username:  jennhaddad
-linkedin_username: jennhaddad
+twitter_username:   Jennhaddad
+github_username:    jennhaddad
+behance_username:   jennhaddad
+linkedin_username:  jennhaddad
+instagram_username: jenn_jenna
 
 # Build settings
 markdown: kramdown

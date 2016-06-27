@@ -1,0 +1,64 @@
+.quote-block {
+  color:          $brand-secondary;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+  h5 {
+    margin:      0;
+    line-height: 0.6;
+    font-weight: 600;
+    font-size:   24px;
+    .quote-small-text {
+    margin-left: 237px;
+    padding-left: 12px;
+    }
+  }
+
+  .quote-big-text {
+    font-size:   70px;
+    font-weight: 700;
+    line-height: 0.9;
+    display:     block;
+    text-align:  right;
+  }
+}
+.quote-block {
+  position:      relative;
+  margin-bottom: 20px;
+
+  &::before {
+    content:     '“';
+    font-size:   100px;
+    font-family: $font-family-base;
+    color:       $brand-primary;
+    position:    absolute;
+    bottom:      -6px;
+    left:        30%;
+  }
+
+  &::after {
+    content:     '”';
+    font-size:   100px;
+    font-family: $font-family-base;
+    color:       $brand-primary;
+    position:    absolute;
+    top:         48px;
+    right:       80px;
+  }
+}
+
+hr {
+  height:           3px;
+  background-color: $gray-lighter;
+  opacity:          0.1;
+  margin:           15px 0;
+}
+
+.skill-level {
+  font-size:      $font-size-small;
+  color:          $gray-lighter;
+  text-transform: uppercase;
+}
+.download-link {
+  margin-top: 5px;
+}

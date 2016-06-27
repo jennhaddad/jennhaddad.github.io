@@ -1,0 +1,35 @@
+.project-thumb {
+  .thumbnail {
+    position: relative;
+
+    .gradient-cover {
+      background: linear-gradient(to right bottom, rgba(255, 255, 255, 0), 50%, rgba(0, 0, 0, 0.15) 50%);
+      display:    block;
+      height:     100%;
+      left:       0;
+      opacity:    0;
+      position:   absolute;
+      top:        0;
+      width:      100%;
+
+      .view-on-behance {
+        background-color: black;
+        display:          inline-block;
+        color:            white;
+        font-size:        14px;
+        padding:          10px;
+        margin-left:      calc(50% - 69px);
+        margin-top:       calc(50% - 61px);
+      }
+    }
+
+    &:hover {
+      .gradient-cover {
+        opacity:            1;
+        transition:         opacity .25s ease-in-out;
+        -moz-transition:    opacity .25s ease-in-out;
+        -webkit-transition: opacity .25s ease-in-out;
+      }
+    }
+  }
+}

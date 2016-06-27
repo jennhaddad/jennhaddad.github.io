@@ -1,0 +1,26 @@
+.caption {
+  font-size:     $caption-font-size;
+  line-height:   18px;
+  margin-bottom: 5px;
+}
+
+.caption-bottom {
+  margin-top:    5px;
+  margin-bottom: 0;
+}
+
+.animal-images {
+  margin-bottom: 15px;
+}
+
+.animal-images-bottom {
+  margin-top: 15px;
+}
+
+.animal-images .thumbnail, .animal-images-bottom .thumbnail {
+  margin-bottom: 0;
+}
+
+.single-animal-image {
+  top: 104px;
+}

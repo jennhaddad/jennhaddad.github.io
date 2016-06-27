@@ -1,13 +1,13 @@
 .i_heart {
   h2 {
-    color: $brand-primary;
+    color:  $brand-primary;
     margin: 5px 0;
 
     a {
       font-weight: 700;
 
       &:hover{
-        border-bottom: 4px solid;
+        border-bottom:       4px solid;
         border-bottom-color: $brand-primary;
         color:               $brand-primary;
         text-decoration:     none;
@@ -18,4 +18,75 @@
       color: $brand-secondary;
     }
   }
+}
+
+.visible-text {
+  background-color: #fff;
+  padding:          6px 0;
+}
+h2 .visible-text{
+  padding: 4px 0;
+}
+
+#home-section {
+  position: relative;
+
+  .background-wrapper {
+    background-image:  url('/images/giraffe.png');
+    background-repeat: no-repeat;
+    background-size:   contain;
+
+    bottom:   -300px;
+    height:   910px;
+    position: absolute;
+    right:    -120px;
+    width:    805px;
+  }
+}
+
+#experience-section {
+  position: relative;
+
+  .background-wrapper {
+    background-image:  url('/images/UI-UX.jpg');
+    background-repeat: no-repeat;
+    background-size:   contain;
+
+    height:   680px;
+    left:     -70px;
+    width:    714px;
+    position: absolute;
+    bottom:   calc(50% - 340px)
+  }
+}
+#kittens-section {
+  position: relative;
+
+  .background-wrapper {
+    background-image:  url('/images/animals-bg.jpg');
+    background-repeat: no-repeat;
+    background-size:   contain;
+
+    height:   504px;
+    right:    42px;
+    width:    712px;
+    position: absolute;
+    bottom:   calc(50% - 162px)
+  }
+}
+#travel-section {
+  position: relative;
+
+  .background-wrapper {
+    background-image:  url('/images/travel-bg.jpg');
+    background-repeat: no-repeat;
+    background-size:   contain;
+
+    height: 651px;
+    right: 180px;
+    width: 1101px;
+    position: absolute;
+    bottom: 0;
+  }
+
 }
