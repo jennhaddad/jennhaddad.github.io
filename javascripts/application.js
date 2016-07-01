@@ -1,4 +1,8 @@
 $(document).ready(function() {
+  $('.navbar-collapse a').on('click', function() {
+    $('.navbar-toggle').click();
+  });
+
   $('#full-page').fullpage({
     navigation:         false,
     navigationPosition: 'right',
