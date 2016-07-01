@@ -1,4 +1,18 @@
 #travel-section {
+  position: relative;
+
+  .background-wrapper {
+    background-image:  url('/images/travel-bg.jpg');
+    background-repeat: no-repeat;
+    background-size:   contain;
+
+    height:   651px;
+    left:     calc(50% - 550px);
+    position: absolute;
+    top:      calc(50% - 325px);
+    width:    1101px;
+  }
+
   .cross-text {
     bottom: 30px;
 

@@ -6,13 +6,17 @@ $(document).ready(function() {
     onLeave: function(index, nextIndex, direction){
       var leavingSection = $(this);
 
-      // noop
+      if ( index === 1 ) {
+        $('header').addClass('simple');
+      }
     },
 
     afterLoad: function(anchorLink, index) {
       var loadedSection = $(this);
 
-      // noop
+      if ( index === 1 ) {
+        $('header').removeClass('simple');
+      }
     },
   });
 });

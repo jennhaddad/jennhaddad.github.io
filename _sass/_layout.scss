@@ -73,6 +73,27 @@ footer {
  * Header
  */
 header {
+  &.simple {
+    nav#header {
+      .container {
+        padding-left:   42px;
+        padding-right:  42px;
+      }
+
+      .navbar-header {
+        background: rgba(255, 255, 255, 0.7);
+
+      }
+    }
+
+    h1 {
+      background-position-x: 0;
+      background-size:       47px 54px;
+      height:                70px !important;
+      margin:                0;
+    }
+  }
+
   h1 {
     background-color:    transparent;;
     background-image:    url('/images/logo.png');

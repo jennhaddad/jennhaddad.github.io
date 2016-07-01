@@ -74,19 +74,3 @@ h2 .visible-text{
     bottom:   calc(50% - 162px)
   }
 }
-#travel-section {
-  position: relative;
-
-  .background-wrapper {
-    background-image:  url('/images/travel-bg.jpg');
-    background-repeat: no-repeat;
-    background-size:   contain;
-
-    height: 651px;
-    right: 180px;
-    width: 1101px;
-    position: absolute;
-    bottom: 0;
-  }
-
-}
