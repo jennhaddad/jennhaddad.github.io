@@ -46,6 +46,22 @@ a {
   }
 }
 
+.visible-landscape {
+  display: none;
+
+  @media (max-width: $screen-xs-max) and (orientation:landscape) {
+    display: block;
+  }
+}
+
+.hidden-landscape {
+  display: block;;
+
+  @media (max-width: $screen-xs-max) and (orientation:landscape) {
+    display: none;
+  }
+}
+
 /**
  * Site footer
  */
@@ -76,21 +92,27 @@ header {
   &.simple {
     nav#header {
       .container {
-        padding-left:   42px;
-        padding-right:  42px;
+        @media (min-width: $screen-md-min) {
+          padding-left:   42px;
+          padding-right:  42px;
+        }
       }
 
       .navbar-header {
         background: rgba(255, 255, 255, 0.7);
-
       }
-    }
 
-    h1 {
-      background-position-x: 0;
-      background-size:       47px 54px;
-      height:                70px !important;
-      margin:                0;
+      h1 {
+        background-size: 47px 54px;
+        height:          70px !important;
+      }
+
+      @media (min-width: $screen-md-min) {
+        h1 {
+          background-position: 0;
+          margin:                0;
+        }
+      }
     }
   }
 
@@ -108,17 +130,40 @@ header {
     text-indent:         -99999em;
     width:               116px;
     z-index:             100;
+  }
 
-    @media (max-width: $screen-xs-max) {
-      // background-size: 46px 53px;
-      // height:          73px;
-      // width:           67px;
+  @media (max-height: 620px) {
+    h1 {
+      margin-top:     15px;
+      margin-bottom:  15px;
+    }
+  }
+
+  @media (max-width: $screen-md-max) and (max-height: 440px) {
+    h1 {
+      background-position: 15px;
+      background-size:       47px 54px;
+      height:                70px !important;
+      margin:                0;
+    }
+  }
+
+  @media (max-width: $screen-xs-max) {
+    h1 {
+      background-position: 15px;
+      background-size:       47px 54px;
+      height:                70px !important;
+      margin:                0;
     }
   }
 
   .navbar-header {
     float:    none;
     position: relative;
+
+    @media (max-height: 550px) {
+      background: rgba(255, 255, 255, 0.7);
+    }
   }
 
   .navbar-toggle {

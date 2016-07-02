@@ -24,7 +24,8 @@
   background-color: #fff;
   padding:          6px 0;
 }
-h2 .visible-text{
+
+h2 .visible-text {
   padding: 4px 0;
 }
 
@@ -41,6 +42,71 @@ h2 .visible-text{
     position: absolute;
     right:    -120px;
     width:    805px;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      bottom: -49%;
+      height: 100%;
+      right:  -16%;
+      width:  70%;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      bottom: -63%;
+      height: 100%;
+      right:  -19%;
+      width:  90%;
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) and (orientation:landscape) {
+      bottom: -35%;
+      right:  -26%;
+    }
+
+    @media (max-width: $screen-xs-max) and (orientation:landscape) {
+      bottom: -35%;
+      right:  -46%;
+    }
+  }
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) and (orientation:landscape) {
+    h1 {
+      font-size: 1.6em;
+    }
+
+    h2 {
+      font-size: 1.1em;
+    }
+  }
+
+  @media (max-width: $crowded-screen-md-max) {
+    h1 {
+      font-size: 1.8em;
+    }
+
+    h2 {
+      font-size: 1.2em;
+    }
+  }
+
+  @media (max-width: $crowded-screen-md-min) {
+    h1 {
+      font-size: 1.6em;
+    }
+
+    h2 {
+      font-size: 1.1em;
+    }
+  }
+
+  @media (max-width: $screen-xs-max) {
+    h1 {
+      font-size:   1.2em;
+      line-height: 1.8;
+    }
+
+    h2 {
+      font-size: 0.9em;
+    }
   }
 }
 

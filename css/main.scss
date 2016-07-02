@@ -28,7 +28,10 @@ $background-color: #FFF;
 $body-bg:          $background-color;
 
 $navbar-default-bg:     transparent;
-$navbar-default-border: none;
+$navbar-default-border: transparent;
+
+$crowded-screen-md-max: 520px;
+$crowded-screen-md-min: 420px;
 
 @mixin border-radius($radius) {
      border-top-right-radius: $radius;
