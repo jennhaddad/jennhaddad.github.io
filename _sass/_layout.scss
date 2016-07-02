@@ -328,10 +328,15 @@ header {
   padding: 0 30px;
 }
 
+@media (max-width: $screen-xs-max) {
+  .push-content {
+    padding: 0;
+  }
+}
+
 .push-portfolio {
   padding: 0 12px;
 }
-
 
 .word-vertical, .word-horizontal {
   font-size:   65px;

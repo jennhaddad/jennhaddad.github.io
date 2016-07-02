@@ -110,21 +110,6 @@ h2 .visible-text {
   }
 }
 
-#experience-section {
-  position: relative;
-
-  .background-wrapper {
-    background-image:  url('/images/UI-UX.jpg');
-    background-repeat: no-repeat;
-    background-size:   contain;
-
-    height:   680px;
-    left:     -70px;
-    width:    714px;
-    position: absolute;
-    bottom:   calc(50% - 340px)
-  }
-}
 #kittens-section {
   position: relative;
 

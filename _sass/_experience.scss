@@ -1,16 +1,48 @@
+#experience-section {
+  position: relative;
+
+  .background-wrapper {
+    background-image:  url('/images/ui-ux.jpg');
+    background-repeat: no-repeat;
+    background-size:   contain;
+
+    height:   680px;
+    left:     -70px;
+    width:    714px;
+    position: absolute;
+    bottom:   calc(50% - 340px)
+  }
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    .background-wrapper {
+      left:   -220px;
+    }
+  }
+
+  @media (max-width: $screen-xs-max) {
+    .background-wrapper {
+      bottom: calc(46% - 220px);
+      height: 60%;
+      left:   -150px;
+    }
+  }
+}
+
 .quote-block {
   color:          $brand-secondary;
   text-transform: uppercase;
   letter-spacing: 3px;
 
   h5 {
-    margin:      0;
-    line-height: 0.6;
-    font-weight: 600;
+    display:     inline-block;
     font-size:   24px;
-    .quote-small-text {
-    margin-left: 237px;
-    padding-left: 12px;
+    font-weight: 600;
+    line-height: 0.6;
+    margin:      0;
+
+    &.quote-small-text {
+      margin-left:  237px;
+      padding-left: 12px;
     }
   }
 
@@ -22,6 +54,7 @@
     text-align:  right;
   }
 }
+
 .quote-block {
   position:      relative;
   margin-bottom: 20px;
@@ -32,18 +65,19 @@
     font-family: $font-family-base;
     color:       $brand-primary;
     position:    absolute;
-    bottom:      -6px;
+    bottom:      8px;
     left:        30%;
   }
 
   &::after {
-    content:     '”';
-    font-size:   100px;
-    font-family: $font-family-base;
+    bottom:      -30px;
     color:       $brand-primary;
+    content:     '”';
+    font-family: $font-family-base;
+    font-size:   100px;
+    line-height: 0px;
     position:    absolute;
-    top:         48px;
-    right:       80px;
+    right:       0;
   }
 }
 
@@ -61,4 +95,48 @@ hr {
 }
 .download-link {
   margin-top: 5px;
+}
+
+@media (max-width: $screen-xs-max) {
+  .quote-block {
+    letter-spacing: 1px;
+    margin-bottom: 0;
+
+    &:before {
+      left: 0;
+    }
+
+    &:after {
+      bottom: -15px;
+      right:  10px;
+    }
+
+    h5 {
+      font-size:   16px;
+      line-height: 1.3;
+
+      &.quote-small-text {
+        margin-left: 45px;
+      }
+    }
+
+    .quote-big-text {
+      font-size:  45px;
+      text-align: left;
+    }
+  }
+
+  .visible-text {
+    padding: 4px 0;
+  }
+
+  .skill-level,
+  .skills {
+    font-size: 14px;
+  }
+
+  #bio {
+    font-size:   16px;
+    line-height: 1.4;
+  }
 }
