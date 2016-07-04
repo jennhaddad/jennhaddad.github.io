@@ -24,3 +24,63 @@
 .single-animal-image {
   top: 104px;
 }
+
+@media (max-width: $screen-xs-max) {
+  .animal-images {
+    margin-bottom: 0;
+  }
+
+  .single-animal-image {
+    margin-bottom: 15px;
+    top:           0;
+  }
+}
+
+
+#kittens-section {
+  position: relative;
+
+  .background-wrapper {
+    background-image:  url('/images/animals-bg.jpg');
+    background-repeat: no-repeat;
+    background-size:   contain;
+
+    height:   504px;
+    right:    42px;
+    width:    712px;
+    position: absolute;
+    bottom:   calc(50% - 162px)
+  }
+
+  .thumbnail {
+    @include box-shadow(none);
+  }
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    .background-wrapper {
+      right: -170px;
+    }
+
+    .caption, .caption-bottom {
+      line-height: 1;
+    }
+
+    .single-animal-image {
+      margin-bottom: 15px;
+      top:           0;
+    }
+
+    .animal-images .thumbnail,
+    .animal-images-bottom .thumbnail {
+      margin: 0 auto;
+      width:  70%;
+    }
+  }
+
+  @media (max-width: $screen-xs-max) {
+    .background-wrapper {
+      height: 60%;
+      right:  -400px;
+    }
+  }
+}
