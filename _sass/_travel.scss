@@ -35,7 +35,7 @@
   }
 
   .cross-text {
-    bottom: calc(25% - 168px);
+    bottom: calc(25% - 110px);
 
     .word-vertical{
       left: 0;
@@ -81,6 +81,26 @@
           line-height:    1;
           padding-bottom: 15px;
         }
+      }
+    }
+  }
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    .cross-text {
+      bottom: calc(25% - 170px);
+
+      .horizontal-text {
+        bottom: 120px;
+        left:   50px;
+      }
+    }
+  }
+
+  @media (max-width: $screen-xs-min) {
+    .cross-text {
+      .horizontal-text {
+        bottom: 78px;
+        left:   32px;
       }
     }
   }
