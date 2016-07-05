@@ -1,18 +1,31 @@
 .four-o-four header {
-  background-image: url('/images/logo-sad-face.png');
+  .navbar {
+    height:   70px;
+    position: relative;
 
-  .logo-full {
-    display: none;
+    h1 {
+      background-size:     47px 54px;
+      height:              70px !important;
+      margin-top:          0;
+      margin-bottom:       0;
+
+      @media (min-width: $screen-sm-min) {
+        background-position: 0;
+      }
+    }
+
+    .navbar-right {
+      display: none;
+    }
   }
 }
 
 #four-o-four {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right bottom, $brand-secondary 50%, $brand-primary 50%);
+  width:      100%;
+  height:     calc(100% - 70px);
+  background: #FFF;
 
   h1 {
-    background-color: $brand-primary;
     display:          inline-block;
     font-size:        $font-size-h1;
     letter-spacing:   2.7px;
@@ -20,60 +33,20 @@
     margin:           0;
     padding:          15px 20px;
 
-    @include border-radius(10px);
-
     @media (max-width: $screen-xs-max) {
-      @include border-radius(5px);
-
       font-size: $font-size-h1 / 2;
     }
   }
 
-  h2 {
-    background-color: $brand-secondary;
-    display:          inline-block;
-    font-size:        $font-size-h2;
-    letter-spacing:   2.7px;
-    line-height:      1em;
-    margin:           6px 0 0;
-    padding:          15px 20px;
-
-    @include border-radius(10px);
-
-    @media (max-width: $screen-xs-max) {
-      @include border-radius(5px);
-
-      font-size: $font-size-h2 / 2;
-    }
-  }
-
   h3 {
-    background-color: $brand-primary;
     display:          inline-block;
     font-size:        $font-size-h3;
-    letter-spacing:   2.7px;
     line-height:      1em;
     margin:           6px 0 0;
-    padding:          15px 20px;
-
-    @include border-radius(10px);
+    padding:          15px 0;
 
     @media (max-width: $screen-xs-max) {
-      @include border-radius(5px);
-
       font-size: $font-size-h2 / 2;
-    }
-  }
-
-  .section-header {
-    left:       calc(50% - 237px);
-    position:   fixed;
-    text-align: center;
-    top:        calc(50% - 99px);
-
-    @media (max-width: $screen-xs-max) {
-      left: calc(50% - 177px);
-      top:  calc(50% - 77px);
     }
   }
 }
